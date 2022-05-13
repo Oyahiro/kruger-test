@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.UUID;
 
 @MappedSuperclass
@@ -15,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public abstract class AbstractEntity implements Serializable {
+public abstract class AbstractEntity extends PersistableEntity {
 
     @Id
     @GenericGenerator(name = "uuid2", strategy = "uuid2")

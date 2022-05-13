@@ -1,4 +1,4 @@
-package com.kruger.test.enitity.filter;
+package com.kruger.test.dto.filter;
 
 import com.kruger.test.enums.VaccinateType;
 import lombok.Getter;

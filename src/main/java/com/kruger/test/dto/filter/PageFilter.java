@@ -1,4 +1,4 @@
-package com.kruger.test.enitity.filter;
+package com.kruger.test.dto.filter;
 
 import lombok.Getter;
 import lombok.Setter;
