@@ -1,0 +1,1326 @@
+{
+	"info": {
+		"_postman_id": "93efd733-8e55-418e-883a-1f8164f6a75f",
+		"name": "Kruger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"root\",\r\n    \"password\": \"toor\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"root\",\r\n    \"password\": \"toor\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 03:31:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZGNodW5nYSIsImlhdCI6MTY1MjQxMjcxNSwiZXhwIjoxNjUyNDE2MzE1fQ.0P1sHJAt-7Ur1DA8Ocu4xNgYsreawbIcGqo9flfhYFuWFdPr5yladloPeXt8dyJ4Nv6qUezWnTl3pRVVT0uSQg\",\n    \"bearer\": \"Bearer\",\n    \"username\": \"cdchunga\",\n    \"identificationNumber\": \"0941106452\",\n    \"authorities\": [\n        {\n            \"authority\": \"ROLE_EMPLOYEE\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Login error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"root\",\r\n    \"password\": \"toor2\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 03:33:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificationNumber\": \"0941106445\",\r\n    \"names\": \"Christian Manuel\",\r\n    \"surnames\": \"Chunga Bayas\",\r\n    \"email\": \"christian98.cb@outlook.es\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/patient/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"save"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Without token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificationNumber\": \"1751288505\",\r\n    \"names\": \"Christopher David\",\r\n    \"surnames\": \"Chunga Zambrano\",\r\n    \"email\": \"new.test@outlook.es\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"save"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 03:50:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "WIth employee role",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZGNodW5nYSIsImlhdCI6MTY1MjQxMzg2MCwiZXhwIjoxNjUyNDE3NDYwfQ.EwXN8TWOx4sIr8T-Q-fZ1-ZSv-1zHynL17CDCgpiDg0IwTzh8MGEZlBqnYfP-WRtxkgocFKH4Dowp5K7TMvSfA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificationNumber\": \"1751288505\",\r\n    \"names\": \"Christopher David\",\r\n    \"surnames\": \"Chunga Zambrano\",\r\n    \"email\": \"new.test@outlook.es\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"save"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 03:51:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Validation error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNjUyNDE0MDI3LCJleHAiOjE2NTI0MTc2Mjd9.uEIsYkq8qr6CL9gxK0fFV8HNAcbmxMyz5PhclVrmzrMZpsafizxacsQ4wg2J_oNzQzBfmTrwe8fQVuYBwg6zTQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificationNumber\": \"1751288504\",\r\n    \"names\": \"Christopher David\",\r\n    \"surnames\": \"Chunga Zambrano\",\r\n    \"email\": \"new.test@outlook.es\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"save"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "ENTITY",
+							"value": "Person"
+						},
+						{
+							"key": "ERROR_MESSAGE",
+							"value": "Identification number is not valid"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 03:53:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Identification duplicated",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNjUyNDE0MDI3LCJleHAiOjE2NTI0MTc2Mjd9.uEIsYkq8qr6CL9gxK0fFV8HNAcbmxMyz5PhclVrmzrMZpsafizxacsQ4wg2J_oNzQzBfmTrwe8fQVuYBwg6zTQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificationNumber\": \"0941106452\",\r\n    \"names\": \"Christopher David\",\r\n    \"surnames\": \"Chunga Zambrano\",\r\n    \"email\": \"new.test@outlook.es\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"save"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "ENTITY",
+							"value": "Person"
+						},
+						{
+							"key": "ERROR_MESSAGE",
+							"value": "There is already a employee registered with this identification number"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 03:57:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Save success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNjUyNDE0MDI3LCJleHAiOjE2NTI0MTc2Mjd9.uEIsYkq8qr6CL9gxK0fFV8HNAcbmxMyz5PhclVrmzrMZpsafizxacsQ4wg2J_oNzQzBfmTrwe8fQVuYBwg6zTQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificationNumber\": \"1751288505\",\r\n    \"names\": \"Cristiano Dadal\",\r\n    \"surnames\": \"Chunga Zambrano\",\r\n    \"email\": \"new.test@outlook.es\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"save"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 04:07:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"identificationNumber\": \"1751288505\",\n    \"fullName\": \"Cristiano Dadal Chunga Zambrano\",\n    \"email\": \"new.test@outlook.es\",\n    \"username\": \"cdchunga1\",\n    \"roles\": [\n        \"ROLE_EMPLOYEE\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZGNodW5nYTEiLCJpYXQiOjE2NTI0MTY0NjIsImV4cCI6MTY1MjQyMDA2Mn0.rbDzfh2a-W6SHzjeFq2aVmXsB1jeTTlBK8oajAtXN2DnBGxyqB5XPXn92qdN7Ex5yp3uVaeqGy_b2q0qMHtvIw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dateBirth\": \"2000-04-27\",\r\n    \"address\": \"Juan Montalvo y Eugenio Espejo\",\r\n    \"phoneNumber\": \"000000000\",\r\n    \"vaccinateData\": {\r\n        \"vaccinated\": true,\r\n        \"vaccinateType\": \"ASTRA_ZENECA\",\r\n        \"vaccinateDate\": \"2020-05-20\",\r\n        \"doseAmount\": 2\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/patient/update/:personId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"update",
+						":personId"
+					],
+					"variable": [
+						{
+							"key": "personId",
+							"value": "1751288505"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "With admin role",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNjUyNDE2MDU1LCJleHAiOjE2NTI0MTk2NTV9.fEbQurgaMXarFxwXLG0OKWwGBEEY-3_BfKc_HiaWtGXk9ACGtVzleXdf3z9IE8LSPgcvpl3MzQAxIkCMOf7xbA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateBirth\": \"2000-04-27\",\r\n    \"address\": \"Juan Montalvo y Eugenio Espejo\",\r\n    \"phoneNumber\": \"000000000\",\r\n    \"vaccinateData\": {\r\n        \"vaccinated\": true,\r\n        \"vaccinateType\": \"JHONSON_JHONSON\",\r\n        \"vaccinateDate\": \"2020-05-20\",\r\n        \"doseAmount\": 2\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/update/:personId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"update",
+								":personId"
+							],
+							"variable": [
+								{
+									"key": "personId",
+									"value": "0941106452"
+								}
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 04:27:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Try update information of other employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZGNodW5nYTEiLCJpYXQiOjE2NTI0MTU5ODgsImV4cCI6MTY1MjQxOTU4OH0.WBC0Ooqu2R5xD_oSwNWhQdM6CTtIi9E_T6em2NIvt23r5IkjOBFgmNGyGbVDuhWc2L7HBIPehkuU9uCPeh3bWA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateBirth\": \"2000-04-27\",\r\n    \"address\": \"Juan Montalvo y Eugenio Espejo\",\r\n    \"phoneNumber\": \"000000000\",\r\n    \"vaccinateData\": {\r\n        \"vaccinated\": true,\r\n        \"vaccinateType\": \"JHONSON_JHONSON\",\r\n        \"vaccinateDate\": \"2020-05-20\",\r\n        \"doseAmount\": 2\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/update/:personId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"update",
+								":personId"
+							],
+							"variable": [
+								{
+									"key": "personId",
+									"value": "0941106452"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "ENTITY",
+							"value": "Employee"
+						},
+						{
+							"key": "ERROR_MESSAGE",
+							"value": "The current user does not have permission to update this information"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 04:27:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Update success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZGNodW5nYTEiLCJpYXQiOjE2NTI0MTY0NjIsImV4cCI6MTY1MjQyMDA2Mn0.rbDzfh2a-W6SHzjeFq2aVmXsB1jeTTlBK8oajAtXN2DnBGxyqB5XPXn92qdN7Ex5yp3uVaeqGy_b2q0qMHtvIw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateBirth\": \"2000-04-27\",\r\n    \"address\": \"Juan Montalvo y Eugenio Espejo\",\r\n    \"phoneNumber\": \"000000000\",\r\n    \"vaccinateData\": {\r\n        \"vaccinated\": true,\r\n        \"vaccinateType\": \"ASTRA_ZENECA\",\r\n        \"vaccinateDate\": \"2020-05-20\",\r\n        \"doseAmount\": 2\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/update/:personId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"update",
+								":personId"
+							],
+							"variable": [
+								{
+									"key": "personId",
+									"value": "1751288505"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 04:35:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"identificationNumber\": \"1751288505\",\n    \"fullName\": \"Cristiano Dadal Chunga Zambrano\",\n    \"email\": \"new.test@outlook.es\",\n    \"username\": null,\n    \"dateBirth\": 956793600000,\n    \"address\": \"Juan Montalvo y Eugenio Espejo\",\n    \"phoneNumber\": \"000000000\",\n    \"vaccinated\": true,\n    \"vaccinateType\": \"ASTRA_ZENECA\",\n    \"vaccinateDate\": 1589932800000,\n    \"doseAmount\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Filter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNjUyNDE2NTY5LCJleHAiOjE2NTI0MjAxNjl9.ypNhL0NDhPIJmFn0x1b9_LMEJNiCEP5d2JN59sPzOTbUyKAotDYbAMyvSss1ysE2JZk9785V7VjPp-b3MjP-oQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 0,\r\n    \"size\": 10,\r\n    \"vaccinateStatus\": true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/patient/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"filter"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "With employee role",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjZGNodW5nYSIsImlhdCI6MTY1MjQxNjU0NSwiZXhwIjoxNjUyNDIwMTQ1fQ.Ncyo1doacQFXEKB_Aac7gszZ9SnvOYM9-wXbgICgpODNLgw36gP3FRE3fymhzYWDKorMtXlN-cr8AS0LDdUxoA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\": 0,\r\n    \"size\": 10,\r\n    \"vaccinateStatus\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"filter"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 04:35:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Filter success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiaWF0IjoxNjUyNDE2NTY5LCJleHAiOjE2NTI0MjAxNjl9.ypNhL0NDhPIJmFn0x1b9_LMEJNiCEP5d2JN59sPzOTbUyKAotDYbAMyvSss1ysE2JZk9785V7VjPp-b3MjP-oQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\": 0,\r\n    \"size\": 10,\r\n    \"vaccinateStatus\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/patient/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patient",
+								"filter"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 May 2022 04:36:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"identificationNumber\": \"0941106452\",\n            \"fullName\": \"Christopher David Chunga Bayas\",\n            \"email\": \"g3.christo@gmail.com\",\n            \"username\": null,\n            \"dateBirth\": 956725200000,\n            \"address\": \"Juan Montalvo y Eugenio Espejo\",\n            \"phoneNumber\": \"000000000 \",\n            \"vaccinated\": true,\n            \"vaccinateType\": \"PFIZER\",\n            \"vaccinateDate\": 1589864400000,\n            \"doseAmount\": 2\n        },\n        {\n            \"identificationNumber\": \"1751288505\",\n            \"fullName\": \"Cristiano Dadal Chunga Zambrano\",\n            \"email\": \"new.test@outlook.es\",\n            \"username\": null,\n            \"dateBirth\": 956725200000,\n            \"address\": \"Juan Montalvo y Eugenio Espejo\",\n            \"phoneNumber\": \"000000000 \",\n            \"vaccinated\": true,\n            \"vaccinateType\": \"ASTRA_ZENECA\",\n            \"vaccinateDate\": 1589864400000,\n            \"doseAmount\": 2\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 1,\n    \"totalElements\": 2,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"numberOfElements\": 2,\n    \"first\": true,\n    \"empty\": false\n}"
+				}
+			]
+		}
+	]
+}
